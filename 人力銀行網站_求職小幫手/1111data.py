@@ -47,6 +47,10 @@ for i in range(page):
                                 '學歷': school,
                                 '工作內容': content }],
                                 )
+        # 因顯示的順序與DataFrame定義中的順序不一致，故再次設定cols
+        cols = ['職務名稱', '工作網址', '公司名稱', '公司類別', '工作地點', '薪資', '工作經驗', '學歷', '工作內容']
+        dfmemo=dfmemo.ix[:,cols]   # DataFrame的行索引不變，列索引是cols中給定的索引值
+        
         df.append(dfmemo)
     print('處理第 ' + str(i+1) + ' 頁完畢!')
 df = pd.concat(df, ignore_index= True)
