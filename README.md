@@ -2,4 +2,4 @@
 
 Python版本：Python3.8
 
-IDE: JupyterNotebook、Spyder
+IDE: JupyterNotebook、Pycharm
